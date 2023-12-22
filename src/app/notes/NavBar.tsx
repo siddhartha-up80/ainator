@@ -11,6 +11,7 @@ import { AddEditNoteDialog } from "@/components/AddEditNoteDialog";
 import { ThemeToggleButton } from "@/components/ThemeToggleButton";
 import { dark } from "@clerk/themes";
 import { useTheme } from "next-themes";
+import AIChatButton from "@/components/AIChatButton";
 
 const NavBar = () => {
   const { theme } = useTheme();
@@ -45,6 +46,7 @@ const NavBar = () => {
               <Plus size={20} className="mr-2" />
               Add Note
             </Button>
+            <AIChatButton />
           </div>
         </div>
       </div>
