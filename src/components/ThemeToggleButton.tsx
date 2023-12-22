@@ -6,6 +6,10 @@ import { Moon, Sun } from "lucide-react";
 export const ThemeToggleButton = () => {
   const { theme, setTheme } = useTheme();
 
+  if (theme === "system") {
+    setTheme("light");
+  }
+
   return (
     <Button
       variant="outline"
